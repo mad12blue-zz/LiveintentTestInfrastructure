@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="27" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-21T14:34:23 CEST" name="Default suite" finished-at="2020-06-21T14:34:30 CEST" duration-ms="7214">
+    <groups>
+    </groups>
+    <test started-at="2020-06-21T14:34:23 CEST" name="Default test" finished-at="2020-06-21T14:34:30 CEST" duration-ms="7214">
+      <class name="com.liveintent.test.RoutingTest">
+        <test-method is-config="true" signature="SuiteLevelSetup()[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:23 CEST" name="SuiteLevelSetup" finished-at="2020-06-21T14:34:23 CEST" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuiteLevelSetup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:23 CEST" name="initialize" finished-at="2020-06-21T14:34:25 CEST" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:25 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:26 CEST" duration-ms="1080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:26 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:26 CEST" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:26 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:27 CEST" duration-ms="499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:27 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:27 CEST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[79]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:27 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:27 CEST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[254]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:27 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:28 CEST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:28 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:28 CEST" duration-ms="372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9534]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:28 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:28 CEST" duration-ms="351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[377]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:28 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[38790]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-500]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.45]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-8.9099]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!@#$%^&*()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="30" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:29 CEST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[\\]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:29 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2147483647523534534]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[999999999999999999]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-999999999999999999]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123456789098765432123456789098765432123456789]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12345678909876543212345678909876543212345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="22" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method signature="routingTest(java.lang.String, java.lang.String)[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:30 CEST" name="routingTest" description="Route data to the correct stream based on seed" data-provider="routingDataProvider" finished-at="2020-06-21T14:34:30 CEST" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[" "]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- routingTest -->
+        <test-method is-config="true" signature="SuiteLevelCleanup()[pri:0, instance:com.liveintent.test.RoutingTest@79d94571]" started-at="2020-06-21T14:34:35 CEST" name="SuiteLevelCleanup" finished-at="2020-06-21T14:34:35 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuiteLevelCleanup -->
+      </class> <!-- com.liveintent.test.RoutingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
