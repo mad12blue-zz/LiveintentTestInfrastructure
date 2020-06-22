@@ -1,85 +1,48 @@
 package com.liveintent.configuration;
 
-import java.io.File;
+import java.io.DataInputStream;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import com.liveintent.dataProvider.TestDataProviderSource;
 
 /****************************************************************
- * READING TEST DATA FROM XLSX FILE AND STORING IT IN A 2D ARRAY *
+ * READING TEST DATA FROM CSV FILE AND STORING IT IN A 2D ARRAY *
  ****************************************************************/
 public class ReadTestData {
 
 	public HashMap<String, String> testDataMap = new HashMap<String, String>();
 	protected static final Logger logger = LogManager.getLogger(ReadTestData.class);
 
-	// Get data from xlsx and populate the testng data source
+	// Get data from csv and populate the testng data source
+	@SuppressWarnings("deprecation")
 	public void populateDataSource(String filepath) {
-
-		FileInputStream inputStream;
-
+		int i = 0;
 		try {
-			logger.debug("laod the xlsx from " + filepath);
-			inputStream = new FileInputStream(new File(filepath));
+			logger.debug("laod the csv from " + filepath);
+			String thisLine;
+			FileInputStream fis = new FileInputStream(filepath);
+			DataInputStream myInput = new DataInputStream(fis);
 
-			Workbook workbook = new XSSFWorkbook(inputStream);
-
-			int noOfSheets = workbook.getNumberOfSheets();
-
-			logger.debug("Getting data from workbook sheet");
-			for (int j = 0; j < noOfSheets; j++) {
-				switch (workbook.getSheetName(j)) {
-				case ("Routing"):
-					TestDataProviderSource.routingTestData = readSheet(workbook.getSheet("Routing"));
-					break;
-				}
+			List<String[]> lines = new ArrayList<String[]>();
+			while ((thisLine = myInput.readLine()) != null) {
+				if (i != 0)
+					lines.add(thisLine.split(","));
+				i++;
 			}
-			workbook.close();
-			inputStream.close();
+			// convert our list to a Object array.
+			Object[][] array = new String[lines.size()][0];
+			TestDataProviderSource.routingTestData = lines.toArray(array);
+
+			myInput.close();
+			fis.close();
 
 		} catch (Exception e) {
 			logger.error(e);
 		}
-	}
-
-	// Read data from specific sheet in xlsx
-	private Object[][] readSheet(Sheet sheet) {
-		Object[][] testData = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		int i = 0, x = 0, y = 0;
-
-		Iterator<Row> iterator = sheet.iterator();
-
-		logger.debug("Getting data from each row of sheet");
-		while (iterator.hasNext()) {
-			Row nextRow = iterator.next();
-			Iterator<Cell> cellIterator = nextRow.cellIterator();
-
-			if (i == 0) {
-				i++;
-				continue;
-			}
-
-			logger.debug("Getting data from each cell of row");
-			while (cellIterator.hasNext()) {
-
-				Cell cell = cellIterator.next();
-				cell.setCellType(Cell.CELL_TYPE_STRING);
-				testData[x][y] = cell.toString();
-				y++;
-			}
-			y = 0;
-			x++;
-		}
-		x = 0;
-
-		return testData;
 	}
 }

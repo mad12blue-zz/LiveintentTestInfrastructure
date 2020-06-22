@@ -13,7 +13,7 @@ import com.liveintent.variables.Var;
 public class BaseTest {
 
 	String configProp = "properties/config.properties";
-	String testDataXlsx = "data/test-data.xlsx";
+	String testDataCsv = "data/test-data.csv";
 
 	protected static final Logger logger = LogManager.getLogger(BaseTest.class);
 
@@ -21,9 +21,9 @@ public class BaseTest {
 	// Read config data and populate test data
 	protected void SuiteLevelSetup() {
 		logger.info("**-------------------------------START TEST-------------------------------**");
-		logger.debug("Reading Test data from " + testDataXlsx);
+		logger.debug("Reading Test data from " + testDataCsv);
 		Var.rtd = new ReadTestData();
-		Var.rtd.populateDataSource(testDataXlsx);
+		Var.rtd.populateDataSource(testDataCsv);
 	}
 
 	@AfterSuite(alwaysRun = true)

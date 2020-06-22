@@ -5,8 +5,9 @@
     <classes>
       <class name="com.liveintent.test.RoutingTest">
         <methods>
+          <include name="SuiteLevelCleanup"/>
           <include name="SuiteLevelSetup"/>
-          <include name="routingTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="routingTest" invocation-numbers="0"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- com.liveintent.test.RoutingTest -->
