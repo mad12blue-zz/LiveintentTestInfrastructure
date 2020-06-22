@@ -1,525 +1,525 @@
-2020-06-22 12:58:50.712 [main] INFO  com.liveintent.test.BaseTest - **-------------------------------START TEST-------------------------------**
-2020-06-22 12:58:50.716 [main] DEBUG com.liveintent.test.BaseTest - Reading Test data from data/test-data.csv
-2020-06-22 12:58:50.716 [main] DEBUG com.liveintent.configuration.ReadTestData - laod the csv from data/test-data.csv
-2020-06-22 12:58:50.728 [main] INFO  com.liveintent.Utilities.BaseUtil - Reading Properties from properties/config.properties
-2020-06-22 12:58:50.729 [main] DEBUG com.liveintent.configuration.ReadProperties - Getting config file from path properties/config.properties
-2020-06-22 12:58:50.729 [main] INFO  com.liveintent.Utilities.BaseUtil - Get the rout url
-2020-06-22 12:58:51.241 [main] INFO  com.liveintent.Utilities.BaseUtil - Reading Properties from properties/config.properties
-2020-06-22 12:58:51.241 [main] DEBUG com.liveintent.configuration.ReadProperties - Getting config file from path properties/config.properties
-2020-06-22 12:58:51.242 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set the Kinesis url and the region
-2020-06-22 12:58:51.243 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set the Kinesis access key and secret
-2020-06-22 12:58:51.244 [main] DEBUG com.liveintent.Utilities.BaseUtil - Build kinesis client
-2020-06-22 12:58:51.776 [main] INFO  com.liveintent.test.BaseTest - Route with 1
-2020-06-22 12:58:51.777 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 1
-2020-06-22 12:58:51.777 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 1
-2020-06-22 12:58:52.309 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 1, Results in status code 200
-2020-06-22 12:58:52.310 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:52.311 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:52.312 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:52.312 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:52.312 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 1
-2020-06-22 12:58:52.313 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
-2020-06-22 12:58:52.313 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:52.315 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:52.488 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:52.488 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:52.488 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:52.488 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to TRIM_HORIZON
-2020-06-22 12:58:52.544 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:52.544 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:52.633 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:52.633 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:52.656 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:52.657 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:52.657 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
-2020-06-22 12:58:52.657 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:52.657 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:52.668 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:52.668 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:52.668 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:52.669 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to TRIM_HORIZON
-2020-06-22 12:58:52.720 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:52.720 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:52.738 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:52.739 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:52.740 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:52.740 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:52.745 [main] INFO  com.liveintent.test.BaseTest - Route with 2
-2020-06-22 12:58:52.745 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 2
-2020-06-22 12:58:52.746 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 2
-2020-06-22 12:58:52.782 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 2, Results in status code 200
-2020-06-22 12:58:52.782 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:52.782 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:52.782 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:52.782 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:52.783 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 2
-2020-06-22 12:58:52.783 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
-2020-06-22 12:58:52.783 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:52.783 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:52.795 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:52.795 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:52.796 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:52.796 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:52.845 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:52.845 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:52.897 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:52.897 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:52.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:52.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:52.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
-2020-06-22 12:58:52.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:52.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:52.950 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:52.951 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:52.951 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:52.951 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:53.009 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:53.009 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:53.067 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:53.068 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:53.068 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:53.071 [main] INFO  com.liveintent.test.BaseTest - Route with 0
-2020-06-22 12:58:53.071 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 0
-2020-06-22 12:58:53.072 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 0
-2020-06-22 12:58:53.115 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 0, Results in status code 200
-2020-06-22 12:58:53.115 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:53.115 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:53.116 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:53.116 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:53.116 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 0
-2020-06-22 12:58:53.116 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
-2020-06-22 12:58:53.116 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:53.116 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:53.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:53.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:53.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:53.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:53.199 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:53.200 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:53.251 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:53.251 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:53.252 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:53.252 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:53.252 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
-2020-06-22 12:58:53.253 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:53.253 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:53.310 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:53.310 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:53.310 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:53.311 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:53.365 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:53.366 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:53.422 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:53.422 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:53.422 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:53.425 [main] INFO  com.liveintent.test.BaseTest - Route with 79
-2020-06-22 12:58:53.426 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 79
-2020-06-22 12:58:53.426 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 79
-2020-06-22 12:58:53.470 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 79, Results in status code 200
-2020-06-22 12:58:53.471 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:53.471 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:53.471 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:53.471 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:53.471 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 79
-2020-06-22 12:58:53.471 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
-2020-06-22 12:58:53.471 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:53.471 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:53.480 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:53.482 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:53.482 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:53.482 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:53.534 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:53.534 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:53.586 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:53.587 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:53.588 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:53.588 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:53.588 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
-2020-06-22 12:58:53.588 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:53.588 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:53.642 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:53.642 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:53.642 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:53.643 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:53.696 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:53.696 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:53.746 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:53.747 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:53.747 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:53.749 [main] INFO  com.liveintent.test.BaseTest - Route with 254
-2020-06-22 12:58:53.749 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 254
-2020-06-22 12:58:53.750 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 254
-2020-06-22 12:58:53.788 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 254, Results in status code 200
-2020-06-22 12:58:53.788 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:53.789 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:53.789 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:53.789 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:53.789 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 254
-2020-06-22 12:58:53.789 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
-2020-06-22 12:58:53.789 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:53.789 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:53.798 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:53.798 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:53.798 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:53.798 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:53.847 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:53.847 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:53.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:53.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:53.899 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:53.900 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:53.900 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
-2020-06-22 12:58:53.900 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:53.900 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:53.954 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:53.954 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:53.955 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:53.955 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:54.008 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:54.008 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:54.065 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:54.065 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:54.066 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:54.068 [main] INFO  com.liveintent.test.BaseTest - Route with 7111
-2020-06-22 12:58:54.068 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 7111
-2020-06-22 12:58:54.069 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 7111
-2020-06-22 12:58:54.106 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 7111, Results in status code 200
-2020-06-22 12:58:54.106 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:54.106 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:54.106 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:54.106 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:54.106 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 7111
-2020-06-22 12:58:54.106 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
-2020-06-22 12:58:54.107 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:54.107 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:54.114 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:54.114 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:54.115 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:54.115 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:54.165 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:54.166 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:54.218 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:54.218 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:54.219 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:54.220 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:54.220 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
-2020-06-22 12:58:54.220 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:54.220 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:54.273 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:54.273 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:54.273 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:54.273 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:54.324 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:54.324 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:54.375 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:54.376 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:54.376 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:54.378 [main] INFO  com.liveintent.test.BaseTest - Route with 9534
-2020-06-22 12:58:54.378 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 9534
-2020-06-22 12:58:54.378 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 9534
-2020-06-22 12:58:54.406 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 9534, Results in status code 200
-2020-06-22 12:58:54.406 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:54.406 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:54.406 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:54.407 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:54.407 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 9534
-2020-06-22 12:58:54.407 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
-2020-06-22 12:58:54.407 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:54.407 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:54.456 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:54.456 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:54.456 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:54.456 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:54.510 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:54.510 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:54.567 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:54.567 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:54.568 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:54.569 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:54.569 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
-2020-06-22 12:58:54.569 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:54.569 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:54.624 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:54.624 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:54.624 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:54.624 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:54.680 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:54.680 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:54.740 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:54.740 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:54.740 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:54.742 [main] INFO  com.liveintent.test.BaseTest - Route with 377
-2020-06-22 12:58:54.742 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 377
-2020-06-22 12:58:54.742 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 377
-2020-06-22 12:58:54.776 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 377, Results in status code 200
-2020-06-22 12:58:54.776 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:54.776 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:54.777 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:54.777 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:54.777 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 377
-2020-06-22 12:58:54.777 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
-2020-06-22 12:58:54.777 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:54.777 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:54.797 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:54.798 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:54.798 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:54.798 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:54.855 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:54.855 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:54.912 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:54.912 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:54.913 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:54.913 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:54.913 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
-2020-06-22 12:58:54.913 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:54.913 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:54.972 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:54.972 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:54.972 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:54.972 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:55.028 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:55.028 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:55.085 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:55.085 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:55.085 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:55.087 [main] INFO  com.liveintent.test.BaseTest - Route with 38790
-2020-06-22 12:58:55.087 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 38790
-2020-06-22 12:58:55.088 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 38790
-2020-06-22 12:58:55.120 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 38790, Results in status code 200
-2020-06-22 12:58:55.120 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:55.120 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:55.120 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:55.120 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:55.120 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 38790
-2020-06-22 12:58:55.120 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
-2020-06-22 12:58:55.120 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:55.120 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:55.183 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:55.183 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:55.183 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:55.183 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:55.247 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:55.247 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:55.304 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:55.304 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:55.305 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:55.305 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:55.305 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
-2020-06-22 12:58:55.305 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:55.305 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:55.354 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:55.354 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:55.355 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:55.355 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:55.406 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:55.406 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:55.459 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:55.459 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:55.459 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:55.461 [main] INFO  com.liveintent.test.BaseTest - Route with -500
-2020-06-22 12:58:55.461 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed -500
-2020-06-22 12:58:55.461 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url -500
-2020-06-22 12:58:55.516 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed -500, Results in status code 200
-2020-06-22 12:58:55.517 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:55.517 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:55.517 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:55.517 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:55.517 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even -500
-2020-06-22 12:58:55.517 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
-2020-06-22 12:58:55.517 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:55.517 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:55.536 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:55.536 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:55.536 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:55.536 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:55.593 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:55.593 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:55.648 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:55.648 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:55.649 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:55.650 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:55.650 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
-2020-06-22 12:58:55.650 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:55.650 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:55.706 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:55.706 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:55.706 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:55.706 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:55.761 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:55.761 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:55.815 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:55.816 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:55.816 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:55.819 [main] INFO  com.liveintent.test.BaseTest - Route with 0.003
-2020-06-22 12:58:55.819 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 0.003
-2020-06-22 12:58:55.819 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 0.003
-2020-06-22 12:58:55.845 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 0.003, Results in status code 400
-2020-06-22 12:58:55.845 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:55.846 [main] INFO  com.liveintent.test.BaseTest - Route with 1.45
-2020-06-22 12:58:55.846 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 1.45
-2020-06-22 12:58:55.846 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 1.45
-2020-06-22 12:58:55.876 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 1.45, Results in status code 400
-2020-06-22 12:58:55.876 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:55.877 [main] INFO  com.liveintent.test.BaseTest - Route with -8.9099
-2020-06-22 12:58:55.877 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed -8.9099
-2020-06-22 12:58:55.877 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url -8.9099
-2020-06-22 12:58:55.895 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed -8.9099, Results in status code 400
-2020-06-22 12:58:55.895 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:55.896 [main] INFO  com.liveintent.test.BaseTest - Route with test
-2020-06-22 12:58:55.896 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed test
-2020-06-22 12:58:55.896 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url test
-2020-06-22 12:58:55.910 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed test, Results in status code 400
-2020-06-22 12:58:55.910 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:55.912 [main] INFO  com.liveintent.test.BaseTest - Route with !@#$%^&*()
-2020-06-22 12:58:55.912 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed !@#$%^&*()
-2020-06-22 12:58:55.912 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url !@#$%^&*()
-2020-06-22 12:58:55.990 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed !@#$%^&*(), Results in status code 400
-2020-06-22 12:58:55.990 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:55.992 [main] INFO  com.liveintent.test.BaseTest - Route with /
-2020-06-22 12:58:55.992 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed /
-2020-06-22 12:58:55.992 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url /
-2020-06-22 12:58:56.028 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed /, Results in status code 404
-2020-06-22 12:58:56.028 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:56.031 [main] INFO  com.liveintent.test.BaseTest - Route with //
-2020-06-22 12:58:56.031 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed //
-2020-06-22 12:58:56.031 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url //
-2020-06-22 12:58:56.049 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed //, Results in status code 404
-2020-06-22 12:58:56.050 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:56.051 [main] INFO  com.liveintent.test.BaseTest - Route with \\
-2020-06-22 12:58:56.051 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed \\
-2020-06-22 12:58:56.051 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url \\
-2020-06-22 12:58:56.073 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed \\, Results in status code 400
-2020-06-22 12:58:56.073 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:56.075 [main] INFO  com.liveintent.test.BaseTest - Route with 2147483647523534534
-2020-06-22 12:58:56.075 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 2147483647523534534
-2020-06-22 12:58:56.075 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 2147483647523534534
-2020-06-22 12:58:56.105 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 2147483647523534534, Results in status code 200
-2020-06-22 12:58:56.106 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:56.106 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:56.106 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:56.106 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:56.106 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 2147483647523534534
-2020-06-22 12:58:56.106 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
-2020-06-22 12:58:56.106 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:56.106 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:56.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:56.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:56.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:56.128 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:56.185 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:56.185 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:56.241 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:56.241 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:56.241 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:56.241 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:56.242 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
-2020-06-22 12:58:56.242 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:56.242 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:56.296 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:56.296 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:56.296 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:56.296 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:56.351 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:56.351 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:56.409 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:56.409 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:56.409 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:56.410 [main] INFO  com.liveintent.test.BaseTest - Route with 999999999999999999
-2020-06-22 12:58:56.410 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 999999999999999999
-2020-06-22 12:58:56.410 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 999999999999999999
-2020-06-22 12:58:56.438 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 999999999999999999, Results in status code 200
-2020-06-22 12:58:56.438 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:56.438 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:56.439 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:56.439 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:56.439 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 999999999999999999
-2020-06-22 12:58:56.439 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
-2020-06-22 12:58:56.439 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:56.439 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:56.493 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:56.493 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:56.493 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:56.493 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:56.551 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:56.551 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:56.606 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:56.607 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:56.607 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:56.607 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:56.607 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
-2020-06-22 12:58:56.608 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:56.608 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:56.668 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:56.669 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:56.669 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:56.669 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:56.723 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:56.723 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:56.784 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:56.784 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:56.785 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:56.787 [main] INFO  com.liveintent.test.BaseTest - Route with -999999999999999999
-2020-06-22 12:58:56.787 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed -999999999999999999
-2020-06-22 12:58:56.787 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url -999999999999999999
-2020-06-22 12:58:56.820 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed -999999999999999999, Results in status code 200
-2020-06-22 12:58:56.821 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:56.821 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
-2020-06-22 12:58:56.821 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
-2020-06-22 12:58:56.821 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
-2020-06-22 12:58:56.821 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even -999999999999999999
-2020-06-22 12:58:56.821 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
-2020-06-22 12:58:56.821 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:56.821 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
-2020-06-22 12:58:56.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:56.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:56.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:56.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
-2020-06-22 12:58:56.899 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:56.900 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:56.962 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:56.962 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
-2020-06-22 12:58:56.963 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:56.963 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:56.963 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
-2020-06-22 12:58:56.964 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
-2020-06-22 12:58:56.964 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
-2020-06-22 12:58:57.023 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
-2020-06-22 12:58:57.023 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
-2020-06-22 12:58:57.023 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
-2020-06-22 12:58:57.023 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
-2020-06-22 12:58:57.082 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
-2020-06-22 12:58:57.082 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
-2020-06-22 12:58:57.143 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
-2020-06-22 12:58:57.143 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
-2020-06-22 12:58:57.143 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
-2020-06-22 12:58:57.145 [main] INFO  com.liveintent.test.BaseTest - Route with 123456789098765432123456789098765432123456789
-2020-06-22 12:58:57.145 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 123456789098765432123456789098765432123456789
-2020-06-22 12:58:57.145 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 123456789098765432123456789098765432123456789
-2020-06-22 12:58:57.166 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 123456789098765432123456789098765432123456789, Results in status code 400
-2020-06-22 12:58:57.166 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:57.167 [main] INFO  com.liveintent.test.BaseTest - Route with 12345678909876543212345678909876543212345678
-2020-06-22 12:58:57.167 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 12345678909876543212345678909876543212345678
-2020-06-22 12:58:57.167 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 12345678909876543212345678909876543212345678
-2020-06-22 12:58:57.182 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 12345678909876543212345678909876543212345678, Results in status code 400
-2020-06-22 12:58:57.182 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:57.184 [main] INFO  com.liveintent.test.BaseTest - Route with null
-2020-06-22 12:58:57.184 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed null
-2020-06-22 12:58:57.184 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url null
-2020-06-22 12:58:57.201 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed null, Results in status code 400
-2020-06-22 12:58:57.202 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:57.203 [main] INFO  com.liveintent.test.BaseTest - Route with 
-2020-06-22 12:58:57.203 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 
-2020-06-22 12:58:57.204 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 
-2020-06-22 12:58:57.221 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed , Results in status code 404
-2020-06-22 12:58:57.221 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:57.222 [main] INFO  com.liveintent.test.BaseTest - Route with ""
-2020-06-22 12:58:57.223 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed ""
-2020-06-22 12:58:57.223 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url ""
-2020-06-22 12:58:57.241 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed "", Results in status code 400
-2020-06-22 12:58:57.241 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:58:57.242 [main] INFO  com.liveintent.test.BaseTest - Route with " "
-2020-06-22 12:58:57.242 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed " "
-2020-06-22 12:58:57.242 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url " "
-2020-06-22 12:58:57.259 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed " ", Results in status code 400
-2020-06-22 12:58:57.259 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
-2020-06-22 12:59:02.287 [main] INFO  com.liveintent.test.BaseTest - **--------------------------------END TEST--------------------------------**
+2020-06-22 14:27:53.921 [main] INFO  com.liveintent.test.BaseTest - **-------------------------------START TEST-------------------------------**
+2020-06-22 14:27:53.925 [main] DEBUG com.liveintent.test.BaseTest - Reading Test data from data/test-data.csv
+2020-06-22 14:27:53.925 [main] DEBUG com.liveintent.configuration.ReadTestData - laod the csv from data/test-data.csv
+2020-06-22 14:27:53.936 [main] INFO  com.liveintent.Utilities.BaseUtil - Reading Properties from properties/config.properties
+2020-06-22 14:27:53.937 [main] DEBUG com.liveintent.configuration.ReadProperties - Getting config file from path properties/config.properties
+2020-06-22 14:27:53.937 [main] INFO  com.liveintent.Utilities.BaseUtil - Get the rout url
+2020-06-22 14:27:54.549 [main] INFO  com.liveintent.Utilities.BaseUtil - Reading Properties from properties/config.properties
+2020-06-22 14:27:54.549 [main] DEBUG com.liveintent.configuration.ReadProperties - Getting config file from path properties/config.properties
+2020-06-22 14:27:54.549 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set the Kinesis url and the region
+2020-06-22 14:27:54.550 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set the Kinesis access key and secret
+2020-06-22 14:27:54.551 [main] DEBUG com.liveintent.Utilities.BaseUtil - Build kinesis client
+2020-06-22 14:27:55.069 [main] INFO  com.liveintent.test.BaseTest - Route with 1
+2020-06-22 14:27:55.069 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 1
+2020-06-22 14:27:55.069 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 1
+2020-06-22 14:27:55.684 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 1, Results in status code 200
+2020-06-22 14:27:55.684 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:55.686 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:55.686 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:55.687 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:55.687 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 1
+2020-06-22 14:27:55.688 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
+2020-06-22 14:27:55.688 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:55.690 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:55.858 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:55.858 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:55.859 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:55.859 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to TRIM_HORIZON
+2020-06-22 14:27:55.911 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:55.912 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:56.030 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:56.030 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:56.041 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:56.042 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:56.042 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
+2020-06-22 14:27:56.042 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:56.042 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:56.050 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:56.050 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:56.050 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:56.051 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to TRIM_HORIZON
+2020-06-22 14:27:56.099 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:56.100 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:56.118 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:56.119 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:56.120 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:56.120 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:56.124 [main] INFO  com.liveintent.test.BaseTest - Route with 2
+2020-06-22 14:27:56.124 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 2
+2020-06-22 14:27:56.124 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 2
+2020-06-22 14:27:56.155 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 2, Results in status code 200
+2020-06-22 14:27:56.155 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:56.155 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:56.156 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:56.156 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:56.156 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 2
+2020-06-22 14:27:56.156 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
+2020-06-22 14:27:56.156 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:56.156 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:56.165 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:56.165 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:56.165 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:56.165 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:56.216 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:56.216 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:56.274 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:56.275 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:56.276 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:56.276 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:56.276 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
+2020-06-22 14:27:56.276 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:56.276 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:56.327 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:56.327 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:56.327 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:56.327 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:56.379 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:56.379 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:56.434 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:56.435 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:56.435 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:56.438 [main] INFO  com.liveintent.test.BaseTest - Route with 0
+2020-06-22 14:27:56.438 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 0
+2020-06-22 14:27:56.438 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 0
+2020-06-22 14:27:56.479 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 0, Results in status code 200
+2020-06-22 14:27:56.479 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:56.479 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:56.479 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:56.480 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:56.480 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 0
+2020-06-22 14:27:56.480 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
+2020-06-22 14:27:56.480 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:56.480 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:56.496 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:56.496 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:56.496 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:56.496 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:56.553 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:56.553 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:56.614 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:56.614 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:56.615 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:56.615 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:56.615 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
+2020-06-22 14:27:56.616 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:56.616 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:56.674 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:56.675 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:56.675 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:56.675 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:56.728 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:56.729 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:56.788 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:56.789 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:56.789 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:56.794 [main] INFO  com.liveintent.test.BaseTest - Route with 79
+2020-06-22 14:27:56.794 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 79
+2020-06-22 14:27:56.794 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 79
+2020-06-22 14:27:56.840 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 79, Results in status code 200
+2020-06-22 14:27:56.841 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:56.841 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:56.841 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:56.841 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:56.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 79
+2020-06-22 14:27:56.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
+2020-06-22 14:27:56.842 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:56.842 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:56.852 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:56.852 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:56.853 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:56.853 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:56.903 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:56.903 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:56.956 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:56.957 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:56.958 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:56.958 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:56.958 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
+2020-06-22 14:27:56.958 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:56.958 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:57.011 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:57.011 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:57.011 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:57.012 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:57.062 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:57.063 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:57.120 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:57.121 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:57.121 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:57.123 [main] INFO  com.liveintent.test.BaseTest - Route with 254
+2020-06-22 14:27:57.124 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 254
+2020-06-22 14:27:57.124 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 254
+2020-06-22 14:27:57.147 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 254, Results in status code 200
+2020-06-22 14:27:57.147 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:57.147 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:57.147 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:57.147 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:57.147 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 254
+2020-06-22 14:27:57.147 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
+2020-06-22 14:27:57.147 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:57.147 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:57.197 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:57.198 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:57.198 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:57.198 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:57.254 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:57.254 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:57.310 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:57.310 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:57.311 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:57.311 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:57.311 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
+2020-06-22 14:27:57.312 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:57.312 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:57.371 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:57.371 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:57.372 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:57.372 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:57.428 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:57.428 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:57.484 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:57.484 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:57.484 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:57.487 [main] INFO  com.liveintent.test.BaseTest - Route with 7111
+2020-06-22 14:27:57.488 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 7111
+2020-06-22 14:27:57.488 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 7111
+2020-06-22 14:27:57.523 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 7111, Results in status code 200
+2020-06-22 14:27:57.523 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:57.524 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:57.524 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:57.524 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:57.524 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 7111
+2020-06-22 14:27:57.524 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
+2020-06-22 14:27:57.525 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:57.525 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:57.534 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:57.534 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:57.534 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:57.534 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:57.584 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:57.585 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:57.643 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:57.643 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:57.644 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:57.644 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:57.644 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
+2020-06-22 14:27:57.644 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:57.644 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:57.694 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:57.694 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:57.695 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:57.695 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:57.748 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:57.748 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:57.802 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:57.802 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:57.802 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:57.805 [main] INFO  com.liveintent.test.BaseTest - Route with 9534
+2020-06-22 14:27:57.806 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 9534
+2020-06-22 14:27:57.806 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 9534
+2020-06-22 14:27:57.840 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 9534, Results in status code 200
+2020-06-22 14:27:57.840 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:57.840 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:57.840 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:57.841 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:57.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 9534
+2020-06-22 14:27:57.841 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
+2020-06-22 14:27:57.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:57.841 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:57.849 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:57.850 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:57.850 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:57.850 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:57.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:57.898 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:57.951 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:57.952 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:57.953 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:57.953 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:57.953 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
+2020-06-22 14:27:57.953 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:57.954 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:58.009 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:58.010 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:58.010 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:58.010 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:58.066 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:58.066 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:58.116 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:58.116 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:58.116 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:58.119 [main] INFO  com.liveintent.test.BaseTest - Route with 377
+2020-06-22 14:27:58.119 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 377
+2020-06-22 14:27:58.120 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 377
+2020-06-22 14:27:58.155 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 377, Results in status code 200
+2020-06-22 14:27:58.156 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:58.156 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:58.156 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:58.156 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:58.156 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 377
+2020-06-22 14:27:58.156 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
+2020-06-22 14:27:58.156 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:58.156 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:58.168 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:58.168 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:58.168 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:58.168 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:58.217 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:58.217 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:58.271 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:58.271 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:58.272 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:58.272 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:58.272 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
+2020-06-22 14:27:58.273 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:58.273 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:58.326 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:58.327 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:58.327 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:58.327 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:58.381 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:58.382 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:58.434 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:58.435 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:58.435 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:58.436 [main] INFO  com.liveintent.test.BaseTest - Route with 38790
+2020-06-22 14:27:58.437 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 38790
+2020-06-22 14:27:58.437 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 38790
+2020-06-22 14:27:58.466 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 38790, Results in status code 200
+2020-06-22 14:27:58.466 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:58.466 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:58.466 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:58.467 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:58.467 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 38790
+2020-06-22 14:27:58.467 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
+2020-06-22 14:27:58.467 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:58.467 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:58.515 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:58.515 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:58.515 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:58.515 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:58.566 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:58.566 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:58.620 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:58.620 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:58.621 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:58.621 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:58.621 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
+2020-06-22 14:27:58.621 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:58.621 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:58.670 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:58.670 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:58.670 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:58.670 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:58.723 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:58.723 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:58.777 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:58.778 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:58.778 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:58.781 [main] INFO  com.liveintent.test.BaseTest - Route with -500
+2020-06-22 14:27:58.781 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed -500
+2020-06-22 14:27:58.782 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url -500
+2020-06-22 14:27:58.808 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed -500, Results in status code 200
+2020-06-22 14:27:58.808 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:58.808 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:58.808 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:58.808 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:58.808 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even -500
+2020-06-22 14:27:58.808 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
+2020-06-22 14:27:58.808 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:58.808 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:58.865 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:58.865 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:58.866 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:58.866 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:58.921 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:58.922 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:58.976 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:58.976 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:58.977 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:58.977 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:58.977 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
+2020-06-22 14:27:58.977 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:58.977 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:59.026 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:59.026 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:59.026 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:59.027 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:59.079 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:59.079 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:59.136 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:59.136 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:59.136 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:59.138 [main] INFO  com.liveintent.test.BaseTest - Route with 0.003
+2020-06-22 14:27:59.138 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 0.003
+2020-06-22 14:27:59.138 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 0.003
+2020-06-22 14:27:59.152 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 0.003, Results in status code 400
+2020-06-22 14:27:59.152 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.153 [main] INFO  com.liveintent.test.BaseTest - Route with 1.45
+2020-06-22 14:27:59.153 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 1.45
+2020-06-22 14:27:59.153 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 1.45
+2020-06-22 14:27:59.173 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 1.45, Results in status code 400
+2020-06-22 14:27:59.174 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.180 [main] INFO  com.liveintent.test.BaseTest - Route with -8.9099
+2020-06-22 14:27:59.181 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed -8.9099
+2020-06-22 14:27:59.181 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url -8.9099
+2020-06-22 14:27:59.201 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed -8.9099, Results in status code 400
+2020-06-22 14:27:59.201 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.206 [main] INFO  com.liveintent.test.BaseTest - Route with test
+2020-06-22 14:27:59.206 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed test
+2020-06-22 14:27:59.206 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url test
+2020-06-22 14:27:59.224 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed test, Results in status code 400
+2020-06-22 14:27:59.225 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.227 [main] INFO  com.liveintent.test.BaseTest - Route with !@#$%^&*()
+2020-06-22 14:27:59.227 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed !@#$%^&*()
+2020-06-22 14:27:59.227 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url !@#$%^&*()
+2020-06-22 14:27:59.253 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed !@#$%^&*(), Results in status code 400
+2020-06-22 14:27:59.254 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.256 [main] INFO  com.liveintent.test.BaseTest - Route with /
+2020-06-22 14:27:59.256 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed /
+2020-06-22 14:27:59.256 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url /
+2020-06-22 14:27:59.284 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed /, Results in status code 404
+2020-06-22 14:27:59.284 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.285 [main] INFO  com.liveintent.test.BaseTest - Route with //
+2020-06-22 14:27:59.285 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed //
+2020-06-22 14:27:59.285 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url //
+2020-06-22 14:27:59.297 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed //, Results in status code 404
+2020-06-22 14:27:59.298 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.299 [main] INFO  com.liveintent.test.BaseTest - Route with \\
+2020-06-22 14:27:59.299 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed \\
+2020-06-22 14:27:59.299 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url \\
+2020-06-22 14:27:59.309 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed \\, Results in status code 400
+2020-06-22 14:27:59.309 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.311 [main] INFO  com.liveintent.test.BaseTest - Route with 2147483647523534534
+2020-06-22 14:27:59.311 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 2147483647523534534
+2020-06-22 14:27:59.311 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 2147483647523534534
+2020-06-22 14:27:59.333 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 2147483647523534534, Results in status code 200
+2020-06-22 14:27:59.333 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.333 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:59.333 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:59.333 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:59.333 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 2147483647523534534
+2020-06-22 14:27:59.333 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is created in even stream
+2020-06-22 14:27:59.333 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:59.333 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:59.341 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:59.341 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:59.341 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:59.341 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:59.391 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:59.392 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:59.452 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:59.452 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:59.453 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:59.453 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:59.453 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is not created in odd stream
+2020-06-22 14:27:59.453 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:59.453 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:59.508 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:59.508 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:59.508 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:59.508 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:59.562 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:59.562 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:59.618 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:59.618 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:59.618 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:59.619 [main] INFO  com.liveintent.test.BaseTest - Route with 999999999999999999
+2020-06-22 14:27:59.619 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 999999999999999999
+2020-06-22 14:27:59.619 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 999999999999999999
+2020-06-22 14:27:59.647 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 999999999999999999, Results in status code 200
+2020-06-22 14:27:59.647 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:27:59.647 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:27:59.647 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:27:59.647 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:27:59.647 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even 999999999999999999
+2020-06-22 14:27:59.647 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
+2020-06-22 14:27:59.647 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:59.648 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:27:59.702 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:59.702 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:59.702 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:59.703 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:27:59.757 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:59.758 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:59.814 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:59.814 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:27:59.815 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:59.815 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:59.815 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
+2020-06-22 14:27:59.815 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:27:59.815 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:27:59.866 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:27:59.866 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:27:59.866 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:27:59.866 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:27:59.930 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:27:59.930 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:27:59.983 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:27:59.983 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:27:59.983 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:27:59.985 [main] INFO  com.liveintent.test.BaseTest - Route with -999999999999999999
+2020-06-22 14:27:59.985 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed -999999999999999999
+2020-06-22 14:27:59.985 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url -999999999999999999
+2020-06-22 14:28:00.019 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed -999999999999999999, Results in status code 200
+2020-06-22 14:28:00.020 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:28:00.020 [main] INFO  com.liveintent.test.BaseTest - Verify X-Transaction-Id header is present in response
+2020-06-22 14:28:00.020 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert header in Response
+2020-06-22 14:28:00.020 [main] INFO  com.liveintent.test.BaseTest - Verify data routed to the correct stream
+2020-06-22 14:28:00.020 [main] DEBUG com.liveintent.Utilities.BaseUtil - Check if the seed is even -999999999999999999
+2020-06-22 14:28:00.020 [main] DEBUG com.liveintent.Utilities.BaseUtil - Assert if record is created in odd stream
+2020-06-22 14:28:00.020 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:28:00.020 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-odd
+2020-06-22 14:28:00.033 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:28:00.033 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:28:00.034 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:28:00.034 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for odd stream shard
+2020-06-22 14:28:00.094 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:28:00.094 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:28:00.145 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:28:00.145 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get single record from the list of records
+2020-06-22 14:28:00.146 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:28:00.146 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:28:00.146 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert if record is not created in even stream
+2020-06-22 14:28:00.146 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get shard list
+2020-06-22 14:28:00.146 [main] DEBUG com.liveintent.Utilities.BaseUtil - List all shards in the stream li-stream-even
+2020-06-22 14:28:00.197 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard
+2020-06-22 14:28:00.197 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest shard from the list of shards
+2020-06-22 14:28:00.198 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records
+2020-06-22 14:28:00.198 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type to AFTER_SEQUENCE_NUMBER for even stream shard
+2020-06-22 14:28:00.255 [main] DEBUG com.liveintent.Utilities.BaseUtil - Set shard iterator type
+2020-06-22 14:28:00.255 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get records from shard {ShardId: shardId-000000000000,HashKeyRange: {StartingHashKey: 0,EndingHashKey: 340282366920938463463374607431768211455},SequenceNumberRange: {StartingSequenceNumber: 49608194181526207447652674105532191981807019597041238018,}}
+2020-06-22 14:28:00.314 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get latest record
+2020-06-22 14:28:00.315 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key
+2020-06-22 14:28:00.315 [main] DEBUG com.liveintent.Utilities.BaseUtil - Get partition key from the record
+2020-06-22 14:28:00.318 [main] INFO  com.liveintent.test.BaseTest - Route with 123456789098765432123456789098765432123456789
+2020-06-22 14:28:00.318 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 123456789098765432123456789098765432123456789
+2020-06-22 14:28:00.318 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 123456789098765432123456789098765432123456789
+2020-06-22 14:28:00.341 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 123456789098765432123456789098765432123456789, Results in status code 400
+2020-06-22 14:28:00.342 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:28:00.343 [main] INFO  com.liveintent.test.BaseTest - Route with 12345678909876543212345678909876543212345678
+2020-06-22 14:28:00.343 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 12345678909876543212345678909876543212345678
+2020-06-22 14:28:00.343 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 12345678909876543212345678909876543212345678
+2020-06-22 14:28:00.360 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed 12345678909876543212345678909876543212345678, Results in status code 400
+2020-06-22 14:28:00.360 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:28:00.361 [main] INFO  com.liveintent.test.BaseTest - Route with null
+2020-06-22 14:28:00.361 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed null
+2020-06-22 14:28:00.361 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url null
+2020-06-22 14:28:00.373 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed null, Results in status code 400
+2020-06-22 14:28:00.373 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:28:00.375 [main] INFO  com.liveintent.test.BaseTest - Route with 
+2020-06-22 14:28:00.375 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed 
+2020-06-22 14:28:00.375 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url 
+2020-06-22 14:28:00.394 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed , Results in status code 404
+2020-06-22 14:28:00.394 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:28:00.396 [main] INFO  com.liveintent.test.BaseTest - Route with ""
+2020-06-22 14:28:00.397 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed ""
+2020-06-22 14:28:00.397 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url ""
+2020-06-22 14:28:00.420 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed "", Results in status code 400
+2020-06-22 14:28:00.420 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:28:00.423 [main] INFO  com.liveintent.test.BaseTest - Route with " "
+2020-06-22 14:28:00.424 [main] INFO  com.liveintent.Utilities.BaseUtil - Send GET Request with seed " "
+2020-06-22 14:28:00.424 [main] DEBUG com.liveintent.helper.RestHelper - Send GET request with url " "
+2020-06-22 14:28:00.442 [main] INFO  com.liveintent.test.BaseTest - Verify routing with seed " ", Results in status code 400
+2020-06-22 14:28:00.442 [main] INFO  com.liveintent.Utilities.BaseUtil - Assert Status Code in Response
+2020-06-22 14:28:05.471 [main] INFO  com.liveintent.test.BaseTest - **--------------------------------END TEST--------------------------------**
